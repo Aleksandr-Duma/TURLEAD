@@ -7,15 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	const resultIndicatorPlane = document.querySelectorAll('.slider-item__indicator-plane');
 
 	window.addEventListener('scroll', function() {
-		// for plane top
 		let offerTopPosition = offerInnerBlock.getBoundingClientRect();
 		let resultTopPosition = resultContent.getBoundingClientRect();
 
 		if (offerTopPosition.top <= -10) {
-			// offerIndicatorPlane.style.top = `${64}%`;
 			offerIndicatorPlane.classList.add('bottom');
 		} else {
-			// offerIndicatorPlane.style.top = `${27}%`;
 			offerIndicatorPlane.classList.remove('bottom');
 		}
 
@@ -105,7 +102,7 @@ $(function(){
 
 	$(".counter").counterUp({
 		delay: 10,
-		time: 200
+		time: 400
 	});
 
 // ...................result-slider....................
@@ -113,7 +110,7 @@ $(function(){
 	$('.result__slider').slick({
 		arrows: true,
 		dots: false,
-		// autoplay: true
+		autoplay: true
 	});
 
 // ......................Scroll........................

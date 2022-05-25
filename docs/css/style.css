@@ -4885,31 +4885,31 @@ button {
 @media (max-width: 1140px) {
   @-webkit-keyframes arrow-move {
     0% {
-      top: 9px;
+      top: 12px;
     }
     50% {
-      top: 21px;
+      top: 24px;
     }
     100% {
-      top: 9px;
+      top: 12px;
     }
   }
   @keyframes arrow-move {
     0% {
-      top: 9px;
+      top: 12px;
     }
     50% {
-      top: 21px;
+      top: 24px;
     }
     100% {
-      top: 9px;
+      top: 12px;
     }
   }
 }
 
 /*-------------------banner----------------*/
 .banner {
-  min-height: 100vh;
+  height: 100vh;
   background-image: url(../img/banner-bg.png);
   background-repeat: no-repeat;
   background-position: center 100%;
@@ -4918,7 +4918,7 @@ button {
   z-index: 5;
 }
 
-@media (max-aspect-ratio: 3 / 2) {
+@media (max-width: 460px) {
   .banner {
     background-image: url(../img/banner-mobile-bg.png);
   }
@@ -4952,6 +4952,7 @@ button {
   width: 72px;
   height: 72px;
   border-radius: 50%;
+  border: 3px solid #fff;
   background: -o-linear-gradient(322.45deg, rgba(255, 255, 255, 0) 13.87%, rgba(255, 255, 255, 0.2) 48.87%, rgba(255, 255, 255, 0) 84.61%), #71B454;
   background: linear-gradient(127.55deg, rgba(255, 255, 255, 0) 13.87%, rgba(255, 255, 255, 0.2) 48.87%, rgba(255, 255, 255, 0) 84.61%), #71B454;
   background-repeat: no-repeat;
@@ -4972,23 +4973,7 @@ button {
   .banner__link-down {
     width: 63px;
     height: 63px;
-    bottom: -28px;
-  }
-}
-
-@media (max-width: 1140px) {
-  .banner__link-down {
-    width: 55px;
-    height: 55px;
-    bottom: -24px;
-  }
-}
-
-@media (max-width: 420px) {
-  .banner__link-down {
-    width: 45px;
-    height: 45px;
-    bottom: -20px;
+    bottom: -29px;
   }
 }
 
@@ -7972,7 +7957,7 @@ button {
   .result__slider .slick-prev {
     background-color: transparent;
     background-image: url(../img/arrow-left-blue.svg);
-    left: 46%;
+    left: 44%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -8047,7 +8032,7 @@ button {
   .result__slider .slick-next {
     background-color: transparent;
     background-image: url(../img/arrow-right-blue.svg);
-    right: 46%;
+    right: 44%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
@@ -9370,9 +9355,9 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   overflow-y: auto;
-  z-index: 50;
+  z-index: 250;
   display: none;
 }
 
@@ -9404,6 +9389,12 @@ button {
   background-size: cover;
   position: relative;
   padding: 107px 40px 90px 40px;
+}
+
+@media (max-width: 1350px) {
+  .pop-up__content {
+    width: 75%;
+  }
 }
 
 .pop-up__close {
@@ -9465,7 +9456,7 @@ button {
   color: #C4C4C4;
   border-radius: 10px;
   border: 1px solid #C4C4C4;
-  padding: 5px 55px 0 40px;
+  padding: 5px 30px 0 30px;
   margin-bottom: 15px;
 }
 
@@ -9515,7 +9506,7 @@ button {
   border-radius: 10px;
   border: 1px solid #C4C4C4;
   resize: vertical;
-  padding: 5px 55px 0 40px;
+  padding: 5px 30px 0 30px;
   margin-bottom: 40px;
 }
 
