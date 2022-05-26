@@ -10,20 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
 		let offerTopPosition = offerInnerBlock.getBoundingClientRect();
 		let resultTopPosition = resultContent.getBoundingClientRect();
 
+		// for plane offer
 		if (offerTopPosition.top <= -10) {
 			offerIndicatorPlane.classList.add('bottom');
 		} else {
 			offerIndicatorPlane.classList.remove('bottom');
 		}
 
-		// for plane bottom
+		// for plane result
 		if (resultTopPosition.top <= 150) {
 			resultIndicatorPlane.forEach(function(item) {
-				item.style.left = `${75}%`;
+				item.classList.add('right');
 			});
 		} else {
 			resultIndicatorPlane.forEach(function(item) {
-				item.style.left = `${19}%`;
+				item.classList.remove('right');
 			});
 		}
 	});
